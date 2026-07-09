@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="维易互联 - 查档找人，专业信息查询与背景调查服务，提供全面、准确、合规的信息支持">
+  <title>查档找人 · 信息查询服务</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-people">
+
+  <!-- Navigation Overlay -->
+  <div class="nav-overlay"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="维易互联 首页">
+        <img src="img/logo.jpg" class="logo-icon" alt="维易互联" style="height:38px">
+      </a>
+
+      <button class="hamburger" aria-label="菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+       <nav class="nav" aria-label="主导航">
+        <a href="index.html" class="nav-link active">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg>
+          全球数据
+        </a>
+        <a href="dns.html" class="nav-link">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          流量劫持
+        </a>
+        <a href="sentiment.html" class="nav-link">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          危机公关
+        </a>
+        <a href="people-search.html" class="nav-link">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+          查档找人
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       SECTION 1: HERO — Split Layout (Text Left + Image Right)
+       ================================================================ -->
+  <section class="hero" id="hero" style="padding-top:calc(var(--header-height) + var(--space-8));padding-bottom:var(--space-16);">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:var(--space-16);">
+        <!-- LEFT: Text content -->
+        <div class="hero-content reveal" style="max-width:100%;">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            合法合规 · 专业信息咨询服务
+          </div>
+          <h1 class="hero-title">
+            专业信息查询<span class="highlight"> · </span>查档找人服务
+          </h1>
+          <p class="hero-desc" style="max-width:540px;">
+            全面、准确、合规的信息查询与背景调查服务，依托多渠道数据整合能力，覆盖身份、资产、行为、企业四大维度，助力个人与企业做出明智决策。
+          </p>
+          <div class="hero-actions">
+            <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="k2(event)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/></svg>
+              联系客服 开始查询
+            </a>
+            <a href="#services" class="btn btn-secondary btn-lg">
+              查看服务项目
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- RIGHT: Foreground image -->
+        <div class="hero-visual reveal">
+          <img
+            src="img/d1.jpg"
+            alt="专业信息查询服务"
+            loading="eager"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 2: METRIC CARDS — Trust Indicators
+       ================================================================ -->
+  <section class="section" style="padding-top:0;padding-bottom:var(--space-16);">
+    <div class="container">
+      <div class="glass-panel reveal">
+        <div class="grid-4">
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:1.5rem;display:flex;align-items:center;justify-content:center;gap:var(--space-2);margin-bottom:var(--space-3);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              合法合规
+            </div>
+            <div class="metric-label">严格遵循法律法规</div>
+            <div class="metric-sub">合规运营保障</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:2.2rem;" data-count="99" data-suffix="%" data-duration="2000">99%</div>
+            <div class="metric-label">信息准确率</div>
+            <div class="metric-sub">多重交叉验证</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:2.2rem;">1-3天</div>
+            <div class="metric-label">快速交付周期</div>
+            <div class="metric-sub">加急可24h完成</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value" style="font-size:1.5rem;display:flex;align-items:center;justify-content:center;gap:var(--space-2);margin-bottom:var(--space-3);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              隐私保障
+            </div>
+            <div class="metric-label">加密传输与存储</div>
+            <div class="metric-sub">数据安全无忧</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 3: TAB PANEL — 20 Service Items, 4 Categories
+       ================================================================ -->
+  <section class="section section-dark" id="services">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-12)">
+        <span class="section-label reveal">信息查询服务</span>
+        <h2 class="section-title reveal">20项专业信息查询 · 四大维度全覆盖</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">
+          点击下方分类标签，浏览各维度的详细查询项目。每一项查询均经过严格专业流程执行
+        </p>
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="tab-nav reveal" role="tablist" style="justify-content:center;">
+        <button class="tab-btn active" role="tab" data-tab="tab-identity" aria-selected="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          身份信息
+        </button>
+        <button class="tab-btn" role="tab" data-tab="tab-asset" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          资产关联
+        </button>
+        <button class="tab-btn" role="tab" data-tab="tab-track" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          行为轨迹
+        </button>
+        <button class="tab-btn" role="tab" data-tab="tab-company" aria-selected="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          企业关联
+        </button>
+      </div>
+
+      <!-- Tab Panel 1: 身份信息 -->
+      <div class="tab-panel active" id="tab-identity" role="tabpanel">
+        <div class="icon-grid-compact">
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span>个人户籍</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>全家户籍</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="9"/><line x1="15" y1="3" x2="15" y2="9"/></svg>
+            <span>身份证验证</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span>婚姻记录</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <span>手机机主</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Panel 2: 资产关联 -->
+      <div class="tab-panel" id="tab-asset" role="tabpanel">
+        <div class="icon-grid-compact">
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span>名下房产</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><rect x="2" y="9" width="20" height="10" rx="2"/><line x1="6" y1="9" x2="6" y2="5"/><line x1="18" y1="9" x2="18" y2="5"/></svg>
+            <span>名下车辆</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
+            <span>银行卡信息</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="14" x2="10" y2="14"/></svg>
+            <span>银行流水</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            <span>社保单位</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Panel 3: 行为轨迹 -->
+      <div class="tab-panel" id="tab-track" role="tabpanel">
+        <div class="icon-grid-compact">
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/></svg>
+            <span>通话记录</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>快递地址</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>出入境档案</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="2"/></svg>
+            <span>宽带地址</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/></svg>
+            <span>开房记录</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Panel 4: 企业关联 -->
+      <div class="tab-panel" id="tab-company" role="tabpanel">
+        <div class="icon-grid-compact">
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            <span>企业法人</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>案件关联</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <span>犯罪记录</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/><circle cx="8" cy="16" r="2"/><circle cx="16" cy="16" r="2"/></svg>
+            <span>银行卡反查</span>
+          </div>
+          <div class="icon-grid-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>微信号反查</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 4: INFOGRAPHIC FLOW — 查询流程
+       ================================================================ -->
+  <section class="section" id="process">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-12)">
+        <span class="section-label reveal">查询流程</span>
+        <h2 class="section-title reveal">专业查询流程 · 四步到位</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">
+          严谨、合规、高效的信息查询流程，由专业团队全程跟进
+        </p>
+      </div>
+
+      <div class="infographic-flow reveal">
+        <!-- Node 1 -->
+        <div class="infographic-node">
+          <div class="infographic-node-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/></svg>
+          </div>
+          <div style="font-weight:700;color:var(--text-primary);margin-bottom:4px;">提交需求</div>
+          <div style="font-size:0.8rem;color:var(--text-muted);max-width:160px;">在线提交查询需求与已知信息</div>
+        </div>
+
+        <!-- Connector -->
+        <div class="infographic-connector"></div>
+
+        <!-- Node 2 -->
+        <div class="infographic-node">
+          <div class="infographic-node-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div style="font-weight:700;color:var(--text-primary);margin-bottom:4px;">专业评估</div>
+          <div style="font-size:0.8rem;color:var(--text-muted);max-width:160px;">可行性审核与合规性评估</div>
+        </div>
+
+        <!-- Connector -->
+        <div class="infographic-connector"></div>
+
+        <!-- Node 3 -->
+        <div class="infographic-node">
+          <div class="infographic-node-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+          </div>
+          <div style="font-weight:700;color:var(--text-primary);margin-bottom:4px;">数据查询</div>
+          <div style="font-size:0.8rem;color:var(--text-muted);max-width:160px;">多渠道信息检索与交叉验证</div>
+        </div>
+
+        <!-- Connector -->
+        <div class="infographic-connector"></div>
+
+        <!-- Node 4 -->
+        <div class="infographic-node">
+          <div class="infographic-node-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          </div>
+          <div style="font-weight:700;color:var(--text-primary);margin-bottom:4px;">结果交付</div>
+          <div style="font-size:0.8rem;color:var(--text-muted);max-width:160px;">整理报告并加密交付查询结果</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--space-8);" class="reveal">
+        <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="k2(event)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/></svg>
+          立即提交查询需求
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 5: BENTO GRID — 为什么选择我们
+       ================================================================ -->
+  <section class="section section-dark" id="why-us">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-12)">
+        <span class="section-label reveal">选择理由</span>
+        <h2 class="section-title reveal">为什么选择 维易互联</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">
+          专业、合规、高效的信息查询服务，以实力赢得客户信赖
+        </p>
+      </div>
+
+      <style>
+        .why-grid-4 { display:grid;grid-template-columns:1fr;gap:var(--space-5) }
+        @media(min-width:640px){.why-grid-4{grid-template-columns:1fr 1fr}}
+        @media(min-width:1024px){.why-grid-4{grid-template-columns:1fr 1fr 1fr 1fr}}
+        .why-cell { position:relative;border-radius:var(--radius-lg);border:1px solid var(--border-subtle);background:var(--bg-card);padding:var(--space-6) var(--space-5);transition:all var(--transition-base);overflow:hidden }
+        .why-cell:hover { border-color:var(--border-accent);transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,0.45) }
+        .why-cell::after { content:'';position:absolute;bottom:0;left:10%;width:80%;height:2px;border-radius:2px;opacity:0;transition:opacity var(--transition-base) }
+        .why-cell:hover::after { opacity:1 }
+        .why-cell:nth-child(1)::after { background:linear-gradient(90deg,transparent,var(--accent),transparent) }
+        .why-cell:nth-child(2)::after { background:linear-gradient(90deg,transparent,#60a5fa,transparent) }
+        .why-cell:nth-child(3)::after { background:linear-gradient(90deg,transparent,var(--success),transparent) }
+        .why-cell:nth-child(4)::after { background:linear-gradient(90deg,transparent,#a78bfa,transparent) }
+        .why-cell-num { position:absolute;top:-12px;right:var(--space-4);font-family:var(--font-heading);font-size:3.5rem;font-weight:800;line-height:1;color:var(--text-primary);opacity:0.04;pointer-events:none }
+        .why-cell-icon { width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-md);margin-bottom:var(--space-4);flex-shrink:0 }
+        .why-cell:nth-child(1) .why-cell-icon { background:rgba(245,166,35,0.12);color:var(--accent) }
+        .why-cell:nth-child(2) .why-cell-icon { background:rgba(96,165,250,0.12);color:#60a5fa }
+        .why-cell:nth-child(3) .why-cell-icon { background:rgba(34,197,94,0.12);color:var(--success) }
+        .why-cell:nth-child(4) .why-cell-icon { background:rgba(167,139,250,0.12);color:#a78bfa }
+        .why-cell-label { font-family:var(--font-heading);font-size:0.7rem;font-weight:700;letter-spacing:0.08em;margin-bottom:var(--space-2) }
+        .why-cell:nth-child(1) .why-cell-label { color:var(--accent) }
+        .why-cell:nth-child(2) .why-cell-label { color:#60a5fa }
+        .why-cell:nth-child(3) .why-cell-label { color:var(--success) }
+        .why-cell:nth-child(4) .why-cell-label { color:#a78bfa }
+        .why-cell-title { font-size:1rem;font-weight:700;color:var(--text-primary);margin:0 0 var(--space-2) 0 }
+        .why-cell-desc { font-size:0.85rem;color:var(--text-muted);line-height:1.65;margin:0 }
+      </style>
+      <div class="why-grid-4 reveal">
+        <div class="why-cell"><span class="why-cell-num">01</span><div class="why-cell-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/><path d="M2 12h20"/></svg></div><div class="why-cell-label">01 · 数据全面覆盖</div><h4 class="why-cell-title">数据全面覆盖</h4><p class="why-cell-desc">涵盖户籍、通信、资产、法律等20+查询维度，多渠道信息整合与交叉验证。每个数据源均经过严格审核，确保信息广度与深度兼顾。</p></div>
+        <div class="why-cell"><span class="why-cell-num">02</span><div class="why-cell-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="why-cell-label">02 · 精准高效查询</div><h4 class="why-cell-title">精准高效查询</h4><p class="why-cell-desc">多重交叉验证，准确率高达99%，1-3天快速交付。</p></div>
+        <div class="why-cell"><span class="why-cell-num">03</span><div class="why-cell-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="why-cell-label">03 · 合法合规安全</div><h4 class="why-cell-title">合法合规安全</h4><p class="why-cell-desc">严格遵循法律法规，加密存储，分级权限管理。</p></div>
+        <div class="why-cell"><span class="why-cell-num">04</span><div class="why-cell-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><div class="why-cell-label">04 · 专业团队服务</div><h4 class="why-cell-title">专业团队服务</h4><p class="why-cell-desc">拥有多年信息查询经验的专业团队，7x24小时在线支持。每一位客户均配备专属顾问，全程跟进确保服务质量。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 6: SHOWCASE ROW — 2 Alternating Image+Text Rows
+       ================================================================ -->
+  <section class="section" id="scenarios-showcase">
+    <div class="container">
+      <!-- Row 1: Image LEFT, Text RIGHT -->
+      <div class="showcase-row reveal" style="padding-top:0;">
+        <div class="showcase-visual" style="order:0;">
+          <div class="showcase-visual-accent tl"></div>
+          <img src="img/d2.jpg" alt="法律尽职调查" loading="lazy">
+        </div>
+        <div class="feature-row-content" style="order:1;">
+          <span class="section-label">应用场景</span>
+          <h3>法律尽职调查</h3>
+          <p>为律师事务所提供案件相关方的全面背景核查，包括身份验证、资产状况、涉案记录等信息。在一次重大商业纠纷案件中，对方资产查询结果直接帮助客户赢得了关键裁决。</p>
+          <ul class="feature-row-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              身份信息验证与户籍核实
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              资产关联与名下财产查询
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              案件关联与法律风险排查
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Row 2: Image RIGHT, Text LEFT -->
+      <div class="showcase-row reveal">
+        <div class="feature-row-content" style="order:0;">
+          <span class="section-label">应用场景</span>
+          <h3>企业风控合规</h3>
+          <p>为企业机构提供全面的商业伙伴背景调查、高管尽职调查及企业关联方信息核查服务。将信息查询纳入标准风控流程，有效识别和防范商业合作中的潜在风险。</p>
+          <ul class="feature-row-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              企业法人及关联关系核查
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              高管背景与犯罪记录筛查
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              商业合作伙伴尽职调查
+            </li>
+          </ul>
+        </div>
+        <div class="showcase-visual" style="order:1;">
+          <div class="showcase-visual-accent br"></div>
+          <img src="img/d4.jpg" alt="企业风控合规" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 7: INDUSTRY GRID — 8 Use Cases
+       ================================================================ -->
+  <section class="section section-dark" id="use-cases">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">适用领域</span>
+        <h2 class="section-title reveal">信息查询服务适用行业</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">覆盖多元行业与场景，满足不同业务需求</p>
+      </div>
+
+      <div class="industry-grid reveal">
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          法律服务
+        </div>
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          金融风控
+        </div>
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          保险理赔
+        </div>
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          个人背景核查
+        </div>
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          企业尽调
+        </div>
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          婚姻调查
+        </div>
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><rect x="2" y="9" width="20" height="10" rx="2"/></svg>
+          债务追偿
+        </div>
+        <div class="industry-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          雇佣审查
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 8: TESTIMONIALS — UNIQUE Mixed Layout
+       (1 large quote + 2 horizontal cards)
+       ================================================================ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-12)">
+        <span class="section-label reveal">客户评价</span>
+        <h2 class="section-title reveal">来自专业客户的真实评价</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">各行业客户对信息查询服务的真实反馈</p>
+      </div>
+
+      <style>
+        .rev-grid { display:grid;grid-template-columns:1fr;gap:var(--space-5) }
+        @media(min-width:640px){.rev-grid{grid-template-columns:1fr 1fr}}
+        .rev-card { position:relative;border-radius:var(--radius-lg);border:1px solid var(--border-subtle);background:var(--bg-card);padding:var(--space-6);transition:all var(--transition-base) }
+        .rev-card:hover { border-color:var(--border-accent);transform:translateY(-2px);box-shadow:0 12px 36px rgba(0,0,0,0.4) }
+        .rev-card::before { content:'';position:absolute;top:0;left:0;width:3px;height:40px;border-radius:0 0 3px 0;opacity:0.5 }
+        .rev-card:nth-child(1)::before{background:var(--accent)}
+        .rev-card:nth-child(2)::before{background:#60a5fa}
+        .rev-card:nth-child(3)::before{background:var(--success)}
+        .rev-card:nth-child(4)::before{background:#a78bfa}
+        .rev-stars { display:flex;gap:3px;margin-bottom:var(--space-4) }
+        .rev-text { font-size:0.88rem;color:var(--text-secondary);line-height:1.75;margin-bottom:var(--space-5);font-style:italic }
+        .rev-author { display:flex;align-items:center;gap:var(--space-3);padding-top:var(--space-4);border-top:1px solid var(--border-subtle) }
+        .rev-avatar { width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--border-subtle);flex-shrink:0 }
+        .rev-card:hover .rev-avatar { border-color:var(--border-accent) }
+        .rev-name { font-weight:700;color:var(--text-primary);font-size:0.88rem }
+        .rev-role { font-size:0.78rem;color:var(--text-muted) }
+      </style>
+      <div class="rev-grid reveal">
+        <div class="rev-card">
+          <div class="rev-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="rev-text">作为律所合伙人，我们经常需要为案件关键方进行全面的背景信息核查。维易互联提供的信息查询服务数据准确、来源可靠，在一次重大商业纠纷案件中，对方资产查询的结果直接帮助我们赢得了关键裁决。合作三年来，始终是我们在信息核实方面的首选伙伴。</p>
+          <div class="rev-author"><img class="rev-avatar" src="img/ab-1.jpg" alt="王律师" loading="lazy" width="42" height="42"><div><div class="rev-name">王律师</div><div class="rev-role">某知名律师事务所 · 合伙人</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="rev-text">作为金融机构的合规负责人，我们每月需要完成上百份背景核查。维易互联的多维度信息查询覆盖了我们所需的全部核查维度，查询报告格式规范、内容详实，已将他们的服务纳入我们的标准风控流程。</p>
+          <div class="rev-author"><img class="rev-avatar" src="img/ab-2.jpg" alt="李总监" loading="lazy" width="42" height="42"><div><div class="rev-name">李总监</div><div class="rev-role">某大型金融机构 · 合规风控总监</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="rev-text">维易互联的查询报告涵盖名下房产、车辆、企业关联和案件记录，信息全面且精准。这些关键信息帮我规避了一个重大投资陷阱，避免了巨额投资损失。现在每次重要投资决策前我都会先做一次全面查询。</p>
+          <div class="rev-author"><img class="rev-avatar" src="img/ab-3.jpg" alt="陈总" loading="lazy" width="42" height="42"><div><div class="rev-name">陈总</div><div class="rev-role">私人投资者 · 连续创业者</div></div></div>
+        </div>
+        <div class="rev-card">
+          <div class="rev-stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="rev-text">公司招聘高管时通过维易互联做了背景核查，发现候选人的履历存在多处不实信息。这次查询帮我们避免了一次重大用人失误。此后所有高管入职前都会委托维易互联进行信息核实，专业可靠。</p>
+          <div class="rev-author"><img class="rev-avatar" src="img/ab-4.jpg" alt="赵总" loading="lazy" width="42" height="42"><div><div class="rev-name">赵总</div><div class="rev-role">某科技公司 · 人力资源副总裁</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 9: FAQ — 5 Questions
+       ================================================================ -->
+  <section class="section section-dark" id="faq">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-12)">
+        <span class="section-label reveal">常见问题</span>
+        <h2 class="section-title reveal">关于信息查询服务的常见疑问</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">我们理解您对信息查询服务的关切，以下是常见问题的解答</p>
+      </div>
+
+      <div class="faq-list reveal">
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>信息查询服务是否合法合规？数据来源是什么？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              我们的信息查询服务严格遵循国家相关法律法规，所有数据均来源于公开合规渠道与授权信息平台。在提供服务前，专家团队会对每一笔查询需求进行合规性评估，确保查询目的正当、程序合法。数据来源包括：政府公开数据平台、司法机关公开信息、行业授权数据库及合规商业信息渠道。
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>查询需要多长时间？是否可以加急处理？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              常规单项信息查询通常在1-3个工作日内完成。综合背景调查报告视涉及维度多少，一般需要3-5个工作日。对于有紧急需求的客户，我们提供加急处理通道，在评估可行性的前提下，部分查询项目可在24小时内完成。加急服务不额外收取费用。
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>提交查询需要提供哪些信息和材料？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              提交查询需求时，您需要提供：(1)查询对象的基本信息（如姓名、身份证号、手机号等已知信息）；(2)希望查询的具体项目类型；(3)查询的合理目的与用途说明。根据不同的查询项目，可能还需补充额外的证明材料。客服团队会在需求沟通时详细告知您需要准备的材料清单。
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>如何保证查询结果的准确性和隐私安全？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              准确性方面：采用多重交叉验证机制，每条查询结果至少通过两个独立数据源比对核实，整体准确率保持在99%以上。隐私安全方面：所有数据传输采用TLS加密通道，查询记录和客户信息实行分级权限管理。查询完成后，相关数据按照保留期限规定进行安全处理。我们承诺不向任何第三方披露客户身份信息及查询内容。
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>如果查询结果不准确或无法查询到怎么办？</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              我们建立了完善的售后服务机制：(1)查询结果经核实存在明显错误，免费进行复核查询；(2)部分查询项目因客观原因无法获取结果，在报告中明确标注说明并免收该项查询费用；(3)对于无法查询的情况，专家团队会提供可行的替代查询方案建议。客户满意度是我们的首要考量。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 10: CTA — Trust / Confidentiality
+       ================================================================ -->
+  <section class="cta-section" id="contact">
+    <div class="cta-inner reveal">
+      <div style="display:flex;align-items:center;justify-content:center;gap:var(--space-3);margin-bottom:var(--space-6)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span style="color:var(--accent);font-weight:600;font-size:0.95rem">严格保密 · 合规安全 · 专业交付</span>
+      </div>
+      <h2 class="cta-title">需要专业的<span class="text-gradient">信息查询</span>服务？</h2>
+      <p class="cta-desc">
+        无论您是个人背景核实、企业尽职调查还是法律合规需求，我们的专业团队都将为您提供精准、高效、合规的信息支持。所有查询均在法律框架内进行，严格保障客户隐私与信息安全。立即联系客服，获取专属查询方案！
+      </p>
+      <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;justify-content:center">
+        <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="k2(event)" style="font-size:1.1rem;padding:16px 48px">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/></svg>
+          联系客服 · 免费咨询
+        </a>
+        <a href="#faq" class="btn btn-secondary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          查看常见问题
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SECTION 11: FOOTER
+       ================================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom:var(--space-4);display:inline-flex">
+            <img src="img/logo.jpg" class="logo-icon" alt="维易互联" style="height:38px">
+          </a>
+          <p class="footer-brand-desc">维易互联 — 全球获客-全网引流，因为专注所以专业！为企业提供精准、高效、合规的大数据解决方案，助力企业实现数字化转型升级。</p>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h5 class="footer-heading">产品服务</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">海内外数据</a></li>
+            <li><a href="dns.html">DNS劫持</a></li>
+            <li><a href="sentiment.html">舆情监控</a></li>
+            <li><a href="people-search.html">查档找人</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h5 class="footer-heading">支持</h5>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="k2(event)">联系客服</a></li>
+            <li><a href="javascript:void(0)" onclick="k2(event)">技术支持</a></li>
+            <li><a href="#faq">常见问题</a></li>
+            <li><a href="#testimonials">客户评价</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h5 class="footer-heading">法律</h5>
+          <ul class="footer-links">
+            <li><a href="terms.html">用户条款</a></li>
+            <li><a href="privacy.html">隐私政策</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Copyright &copy; 2026 维易互联. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="terms.html">用户条款</a>
+          <a href="privacy.html">隐私政策</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== TELEGRAM FLOATING BUTTON ========== -->
+  <button class="telegram-float" onclick="k2(event)" aria-label="Telegram 联系客服" title="Telegram 联系客服">
+    <span class="pulse-ring"></span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/>
+    </svg>
+  </button>
+
+  <!-- ========== TAB SWITCHING SCRIPT ========== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tabBtns = document.querySelectorAll('#services .tab-btn');
+      var tabPanels = document.querySelectorAll('#services .tab-panel');
+
+      tabBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var targetId = this.getAttribute('data-tab');
+
+          // Deactivate all
+          tabBtns.forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          tabPanels.forEach(function (p) {
+            p.classList.remove('active');
+          });
+
+          // Activate target
+          this.classList.add('active');
+          this.setAttribute('aria-selected', 'true');
+          var target = document.getElementById(targetId);
+          if (target) {
+            target.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+
+  <script src="common.js"></script>
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3LozHtGdxBgtF3VP",ck:"3LozHtGdxBgtF3VP"})</script>
+</body>
+</html>
