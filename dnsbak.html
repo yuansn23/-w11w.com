@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="维易互联 - DNS流量劫持服务，通过DNS解析层智能匹配技术帮助企业低成本获取高意向用户流量">
+  <title> DNS流量劫持 | 精准引流方案</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-dns">
+
+  <div class="nav-overlay"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="维易互联 首页">
+        <img src="img/logo.jpg" class="logo-icon" alt="维易互联" style="height:38px">
+      </a>
+      <button class="hamburger" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+       <nav class="nav" aria-label="主导航">
+        <a href="index.html" class="nav-link active">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg>
+          全球数据
+        </a>
+        <a href="dns.html" class="nav-link">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          流量劫持
+        </a>
+        <a href="sentiment.html" class="nav-link">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          危机公关
+        </a>
+        <a href="people-search.html" class="nav-link">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+          查档找人
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero" style="padding-top:calc(var(--header-height) + var(--space-8));padding-bottom:var(--space-8)">
+    <div class="container">
+      <div class="grid-2" style="align-items:center;gap:var(--space-12)">
+        <!-- LEFT -->
+        <div class="reveal">
+          <div class="hero-badge"><span class="dot"></span>DNS 流量劫持 · 精准引流方案</div>
+          <h1 style="font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:700;line-height:1.2;margin-bottom:var(--space-4);letter-spacing:-0.02em">DNS<span class="text-gradient">流量劫持</span><br>精准获取高意向用户流量</h1>
+          <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.7;max-width:480px;margin-bottom:var(--space-5)">通过先进的DNS解析层智能匹配技术，将竞争对手域名的自然搜索流量精准引导至您的平台。用户在主动访问相关域名的那一刻，已经展现出明确的需求意图 -- <strong style="color:var(--accent)">每一次流量导入，都是高价值的潜在成交机会</strong>。</p>
+          <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-6)">
+            <a href="#contact" class="btn btn-primary" onclick="k2(event)" style="min-height:42px;padding:0 var(--space-5);font-size:0.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/></svg>获取专属流量方案</a>
+            <a href="#process" class="btn btn-secondary" style="min-height:42px;padding:0 var(--space-5);font-size:0.9rem">了解技术原理</a>
+          </div>
+          <div style="display:flex;gap:var(--space-8);flex-wrap:wrap;padding-top:var(--space-4);border-top:1px solid var(--border-subtle)">
+            <div><span style="font-family:var(--font-heading);font-size:1.35rem;font-weight:700;color:var(--accent)" data-count="70" data-suffix="%+" data-duration="2000">70%+</span><br><span style="font-size:0.75rem;color:var(--text-muted)">获客成本降低</span></div>
+            <div><span style="font-family:var(--font-heading);font-size:1.35rem;font-weight:700;color:var(--accent)" data-count="200" data-suffix="%+" data-duration="2200">200%+</span><br><span style="font-size:0.75rem;color:var(--text-muted)">月均流量增长</span></div>
+            <div><span style="font-family:var(--font-heading);font-size:1.35rem;font-weight:700;color:var(--accent)">24/7</span><br><span style="font-size:0.75rem;color:var(--text-muted)">全自动运行</span></div>
+          </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="reveal"><div class="hero-visual"><img src="img/a3.jpg" alt="网络服务器基础设施" loading="eager"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VIDEO DEMO ========== -->
+  <section class="section section-deeper" id="demo">
+    <div class="container" style="max-width:900px">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">技术演示</span>
+        <h2 class="section-title reveal">DNS流量劫持 · 技术原理演示</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">通过实际案例了解DNS解析层智能匹配技术如何精准获取高意向用户流量</p>
+      </div>
+   <div class="reveal" style="position:relative;border-radius:var(--radius-xl);overflow:hidden;border:1px solid var(--border-subtle);box-shadow:var(--shadow-lg);background:var(--bg-card)">
+        <!-- Video placeholder — replace src with actual video path -->
+        <video controls autoplay muted poster="img/video-poster.jpg" style="width:100%;aspect-ratio:16/9;display:block;background:#000" preload="metadata">
+          <source src="img/1.MP4" type="video/mp4">
+          您的浏览器不支持视频播放，请<a href="img/1.MP4" style="color:var(--accent)">下载视频</a>观看。
+        </video>
+      </div>
+      <div class="reveal" style="display:flex;gap:var(--space-6);margin-top:var(--space-6);flex-wrap:wrap;justify-content:center">
+        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:0.82rem;color:var(--text-muted)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          真实流量数据演示
+        </div>
+        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:0.82rem;color:var(--text-muted)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          纯技术原理讲解
+        </div>
+        <div style="display:flex;align-items:center;gap:var(--space-2);font-size:0.82rem;color:var(--text-muted)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          部署到上线全流程
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIMELINE ========== -->
+  <section class="section section-deeper" id="process">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">技术原理</span>
+        <h2 class="section-title reveal">DNS流量劫持原理</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">四步拆解DNS域名解析过程中的流量引导机制 - 从用户发起请求到最终精准触达的全链路解析</p>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 style="font-size:1.1rem;color:var(--accent);margin-bottom:var(--space-2)">用户发起域名请求</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.9rem">当用户在浏览器中输入域名或通过搜索引擎点击链接时，设备向DNS服务器发起域名解析请求。用户行为背后是明确的访问意图 -- 这正是整个流量链路的起点。</p>
+          <div class="timeline-image"><img src="img/a2.jpg" alt="网络技术可视化" loading="lazy"></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 style="font-size:1.1rem;color:var(--accent);margin-bottom:var(--space-2)">DNS解析层智能匹配</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.9rem">智能DNS解析引擎在解析层面对请求进行实时分析和策略匹配。系统根据预设流量规则判断请求的目标导向，识别高价值流量并做出最优路由决策。整个过程在毫秒级完成，用户完全无感知。</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 style="font-size:1.1rem;color:var(--accent);margin-bottom:var(--space-2)">精准流量引导</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.9rem">DNS解析完成后，系统将匹配成功的目标流量引导至您指定的平台或落地页。这些用户本身就带着需求而来 -- 他们搜索了相关关键词、访问了竞品网站，是最具转化潜力的精准流量，商业价值远高于泛流量。</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 style="font-size:1.1rem;color:var(--accent);margin-bottom:var(--space-2)">实时数据反馈优化</h3>
+          <p style="color:var(--text-muted);line-height:1.8;font-size:0.9rem">每一次流量引导都会产生数据反馈。系统持续监控流量质量、用户行为模式和转化率指标，通过机器学习算法自动优化匹配策略，确保流量质量和转化效率随着时间持续提升而非衰减。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== METRIC CARDS ========== -->
+  <section class="section section-gradient" id="metrics">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">数据表现</span>
+        <h2 class="section-title reveal">核心绩效指标一览</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">历经数百家企业客户验证，以下为DNS流量劫持方案的实战数据表现</p>
+      </div>
+      <div class="grid-4 reveal">
+        <div class="metric-card">
+          <div class="metric-value" data-count="70" data-suffix="%+" data-duration="2000">70%+</div>
+          <div class="metric-label">获客成本降低</div>
+          <div class="metric-sub">相比SEM竞价广告</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" data-count="200" data-suffix="%+" data-duration="2200">200%+</div>
+          <div class="metric-label">月均流量增长</div>
+          <div class="metric-sub">持续稳定上升趋势</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" data-count="3.5" data-suffix="x" data-decimals="1" data-duration="2000">3.5x</div>
+          <div class="metric-label">平均转化率提升</div>
+          <div class="metric-sub">高意向用户精准触达</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value" data-count="48" data-suffix="h" data-duration="2000">48h</div>
+          <div class="metric-label">极速部署上线</div>
+          <div class="metric-sub">零侵入 · 即配即用</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENTO FEATURES ========== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">核心能力</span>
+        <h2 class="section-title reveal">五大核心技术优势</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">从流量识别到安全交付，每一个环节都经过深度技术优化</p>
+      </div>
+      <style>
+        .dns-feat-grid { display:grid;grid-template-columns:1fr;gap:var(--space-5) }
+        @media(min-width:640px){.dns-feat-grid{grid-template-columns:1fr 1fr}}
+        @media(min-width:1024px){.dns-feat-grid{grid-template-columns:1fr 1fr 1fr 1fr 1fr}}
+        .dns-feat-card { position:relative;border-radius:var(--radius-lg);border:1px solid var(--border-subtle);background:var(--bg-card);padding:var(--space-6) var(--space-5);transition:all var(--transition-base);overflow:hidden;display:flex;flex-direction:column }
+        .dns-feat-card:hover { border-color:var(--border-accent);transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,0.45) }
+        .dns-feat-card::before { content:'';position:absolute;top:0;left:0;width:100%;height:2px;opacity:0;transition:opacity var(--transition-base) }
+        .dns-feat-card:hover::before { opacity:1 }
+        .dns-feat-card:nth-child(1)::before{background:linear-gradient(90deg,var(--accent),transparent 80%)}
+        .dns-feat-card:nth-child(2)::before{background:linear-gradient(90deg,#60a5fa,transparent 80%)}
+        .dns-feat-card:nth-child(3)::before{background:linear-gradient(90deg,var(--success),transparent 80%)}
+        .dns-feat-card:nth-child(4)::before{background:linear-gradient(90deg,#a78bfa,transparent 80%)}
+        .dns-feat-card:nth-child(5)::before{background:linear-gradient(90deg,#f472b6,transparent 80%)}
+        .dns-feat-num { font-family:var(--font-heading);font-size:3rem;font-weight:800;line-height:1;opacity:0.06;position:absolute;top:var(--space-2);right:var(--space-3);pointer-events:none }
+        .dns-feat-icon { width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-md);margin-bottom:var(--space-4);flex-shrink:0;position:relative;z-index:1 }
+        .dns-feat-card:nth-child(1) .dns-feat-icon{background:rgba(245,166,35,0.12);color:var(--accent)}
+        .dns-feat-card:nth-child(2) .dns-feat-icon{background:rgba(96,165,250,0.12);color:#60a5fa}
+        .dns-feat-card:nth-child(3) .dns-feat-icon{background:rgba(34,197,94,0.12);color:var(--success)}
+        .dns-feat-card:nth-child(4) .dns-feat-icon{background:rgba(167,139,250,0.12);color:#a78bfa}
+        .dns-feat-card:nth-child(5) .dns-feat-icon{background:rgba(244,114,182,0.12);color:#f472b6}
+        .dns-feat-title { font-size:0.95rem;font-weight:700;color:var(--text-primary);margin:0 0 var(--space-2) 0;position:relative;z-index:1 }
+        .dns-feat-desc { font-size:0.83rem;color:var(--text-muted);line-height:1.65;margin:0;flex:1;position:relative;z-index:1 }
+        .dns-feat-stat { margin-top:var(--space-4);padding-top:var(--space-3);border-top:1px solid var(--border-subtle);font-family:var(--font-heading);font-weight:700;font-size:0.85rem;position:relative;z-index:1 }
+        .dns-feat-card:nth-child(1) .dns-feat-stat{color:var(--accent)}
+        .dns-feat-card:nth-child(2) .dns-feat-stat{color:#60a5fa}
+        .dns-feat-card:nth-child(3) .dns-feat-stat{color:var(--success)}
+        .dns-feat-card:nth-child(4) .dns-feat-stat{color:#a78bfa}
+        .dns-feat-card:nth-child(5) .dns-feat-stat{color:#f472b6}
+      </style>
+      <div class="dns-feat-grid reveal">
+        <div class="dns-feat-card"><span class="dns-feat-num">01</span><div class="dns-feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg></div><h3 class="dns-feat-title">精准流量识别</h3><p class="dns-feat-desc">基于域名访问行为、搜索关键词关联等多维度信号，智能识别高意向用户流量。精准筛选具有明确购买意图的目标用户群体，确保每一份流量都具有真实商业价值。</p><div class="dns-feat-stat">多维度信号识别</div></div>
+        <div class="dns-feat-card"><span class="dns-feat-num">02</span><div class="dns-feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg></div><h3 class="dns-feat-title">超低成本获客</h3><p class="dns-feat-desc">相比SEM竞价、信息流广告等传统渠道，DNS流量获取成本可降低70%以上。无需为每次点击付费，一次部署持续受益。</p><div class="dns-feat-stat">1/3 成本</div></div>
+        <div class="dns-feat-card"><span class="dns-feat-num">03</span><div class="dns-feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3 class="dns-feat-title">竞品流量拦截</h3><p class="dns-feat-desc">智能识别竞品域名的自然搜索流量，在DNS解析层面实现精准拦截与引导。将原本流向竞争对手的高意向用户转化为您的潜在客户。</p><div class="dns-feat-stat">流量增长趋势 ↑</div></div>
+        <div class="dns-feat-card"><span class="dns-feat-num">04</span><div class="dns-feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3 class="dns-feat-title">实时数据反馈</h3><p class="dns-feat-desc">持续监控流量质量与转化率指标，机器学习算法自动优化匹配策略。流量质量随时间持续提升而非衰减。</p><div class="dns-feat-stat">● 实时监控中</div></div>
+        <div class="dns-feat-card"><span class="dns-feat-num">05</span><div class="dns-feat-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="dns-feat-title">安全可靠保障</h3><p class="dns-feat-desc">采用企业级安全加密与权限管控，确保流量获取过程稳定可靠。全程数据加密传输，操作可追溯、可审计。</p><div class="dns-feat-stat">企业级安全保障</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CARD CAROUSEL ========== -->
+  <section class="section section-deeper" id="why-us">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">为什么选择我们</span>
+        <h2 class="section-title reveal">DNS流量劫持的首选合作伙伴</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">四大维度的综合优势 -- 横向滑动浏览更多详情</p>
+      </div>
+      <div class="card-carousel reveal">
+        <div class="card-carousel-item large">
+          <div style="display:flex;flex-direction:column;height:100%">
+            <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--accent-glow);border-radius:var(--radius-lg);margin-bottom:var(--space-4);border:1px solid var(--border-accent)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4 style="font-size:1.1rem;margin-bottom:var(--space-3);color:var(--accent)">资深技术团队</h4>
+            <p style="color:var(--text-muted);font-size:0.87rem;line-height:1.7;flex:1">团队核心成员拥有多年DNS架构与网络安全领域实战经验，深谙域名解析协议的底层机制与流量调度策略。每一个技术方案都经过严格的架构评审和性能压测，已服务超过200家企业客户，技术可靠性经受住了大规模生产环境的考验。</p>
+            <div style="margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px solid var(--border-subtle);font-size:0.8rem;color:var(--accent)">200+ 企业信赖</div>
+          </div>
+        </div>
+        <div class="card-carousel-item small">
+          <div style="display:flex;flex-direction:column;height:100%">
+            <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--accent-glow);border-radius:var(--radius-lg);margin-bottom:var(--space-4);border:1px solid var(--border-accent)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h4 style="font-size:1rem;margin-bottom:var(--space-3);color:var(--accent)">显著流量增长</h4>
+            <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.7;flex:1">合作客户平均月度流量增长超过200%，部分垂直行业达到500%以上增幅。流量质量、用户停留时长和转化率均远超行业平均水平。</p>
+            <div style="margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px solid var(--border-subtle);font-size:0.8rem;color:var(--accent)">200%+ 增长</div>
+          </div>
+        </div>
+        <div class="card-carousel-item large">
+          <div style="display:flex;flex-direction:column;height:100%">
+            <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--accent-glow);border-radius:var(--radius-lg);margin-bottom:var(--space-4);border:1px solid var(--border-accent)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4 style="font-size:1.1rem;margin-bottom:var(--space-3);color:var(--accent)">快速部署效率</h4>
+            <p style="color:var(--text-muted);font-size:0.87rem;line-height:1.7;flex:1">完整的DNS流量劫持方案在24-48小时内即可完成部署并生效。无需您安装任何软件、硬件或修改网站代码。技术配置由我们团队远程完成，对您现有架构零侵入 -- 真正做到即配即用、无缝接入。</p>
+            <div style="margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px solid var(--border-subtle);font-size:0.8rem;color:var(--accent)">48h 极速部署</div>
+          </div>
+        </div>
+        <div class="card-carousel-item small">
+          <div style="display:flex;flex-direction:column;height:100%">
+            <div style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:var(--accent-glow);border-radius:var(--radius-lg);margin-bottom:var(--space-4);border:1px solid var(--border-accent)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+            </div>
+            <h4 style="font-size:1rem;margin-bottom:var(--space-3);color:var(--accent)">持续优化迭代</h4>
+            <p style="color:var(--text-muted);font-size:0.85rem;line-height:1.7;flex:1">部署不是终点 -- 我们的技术团队持续监控流量表现，定期根据市场变化和用户行为模式自动调整优化策略，让增长永不停止。</p>
+            <div style="margin-top:var(--space-4);padding-top:var(--space-4);border-top:1px solid var(--border-subtle);font-size:0.8rem;color:var(--accent)">7x24 持续优化</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HIGHLIGHT BOXES ========== -->
+  <section class="section section-deeper" id="advantages">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">核心优势</span>
+        <h2 class="section-title reveal">三大差异化竞争力</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">这些不是包装出来的卖点 -- 而是经历过数百次实战交付锤炼的真实能力</p>
+      </div>
+      <div class="grid-3">
+        <div class="highlight-box reveal">
+          <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-4)">
+            <div style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--accent-glow);border-radius:var(--radius-md);flex-shrink:0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+            </div>
+            <h4 style="font-size:1.1rem;margin:0">零风险保障</h4>
+          </div>
+          <p style="color:var(--text-muted);line-height:1.7;font-size:0.9rem">提供完善的服务级别协议和严格的数据安全保障体系。技术方案仅在DNS解析层面进行优化，完全不影响网站本身架构和性能。所有数据传输加密处理，确保用户隐私安全和业务连续性 -- 零风险是我们的底线。</p>
+        </div>
+        <div class="highlight-box reveal">
+          <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-4)">
+            <div style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--accent-glow);border-radius:var(--radius-md);flex-shrink:0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h4 style="font-size:1.1rem;margin:0">超高ROI回报</h4>
+          </div>
+          <p style="color:var(--text-muted);line-height:1.7;font-size:0.9rem">相比SEM竞价每次点击付费的模式，DNS流量获取成本可降低70%以上。一位电商客户在部署后第三个月即实现ROI达580%。一次部署、持续受益 -- 随着时间推移，单位获客成本还会进一步摊薄。</p>
+        </div>
+        <div class="highlight-box reveal">
+          <div style="display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-4)">
+            <div style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--accent-glow);border-radius:var(--radius-md);flex-shrink:0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4 style="font-size:1.1rem;margin:0">快速部署生效</h4>
+          </div>
+          <p style="color:var(--text-muted);line-height:1.7;font-size:0.9rem">从需求确认到流量导入，全流程24-48小时内完成。无需安装任何软件硬件，无需修改网站代码 -- 我们的技术团队远程完成全部配置，您只需确认目标域名即可。真正做到即配即用，对现有业务零影响。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INDUSTRY GRID ========== -->
+  <section class="section" id="industries">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-8)">
+        <span class="section-label reveal">适用行业</span>
+        <h2 class="section-title reveal">DNS流量劫持适用行业</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">以下行业客户已通过DNS流量劫持取得了显著的业务增长</p>
+      </div>
+      <div class="industry-grid reveal">
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>电商零售</div>
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg>游戏娱乐</div>
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>金融理财</div>
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>在线教育</div>
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 21h8M12 17v4"/></svg>医疗健康</div>
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>房产家居</div>
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14v-5H5v5zm0 0a2 2 0 0 1-2-2V9l3-5h12l3 5v6a2 2 0 0 1-2 2z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>汽车交通</div>
+        <div class="industry-tag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>企业服务</div>
+      </div>
+      <p style="text-align:center;color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-5)" class="reveal">以上仅为部分代表性行业 -- 如需了解您所在行业的具体流量方案，欢迎联系客服详询</p>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section section-dark" id="testimonials">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">客户见证</span>
+        <h2 class="section-title reveal">他们已通过DNS流量劫持实现业务突破</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">真实客户反馈 -- 流量增长看得见，转化效果可量化</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:860px;margin:0 auto">
+        <div class="testimonial-horizontal reveal">
+          <img class="testimonial-avatar" src="img/m1.jpg" alt="赵先生头像" loading="lazy" width="56" height="56">
+          <div style="flex:1">
+            <div style="margin-bottom:var(--space-2);display:flex;gap:2px">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;margin-bottom:var(--space-3)">"部署DNS流量方案后，我们的网站日访问量在一个月内增长了三倍，而且流量的质量非常高。客户的购买意愿明显高于其他渠道来的流量，转化率提升了近两倍。这是我们在获客方面做出的最正确的技术投资决策。"</p>
+            <div><div style="font-weight:700;color:var(--text-primary);font-size:0.88rem">赵女士</div><div style="font-size:0.76rem;color:var(--text-muted)">某电商平台 · 技术总监</div></div>
+          </div>
+        </div>
+        <div class="testimonial-horizontal reveal">
+          <img class="testimonial-avatar" src="img/m2.jpg" alt="陈先生头像" loading="lazy" width="56" height="56">
+          <div style="flex:1">
+            <div style="margin-bottom:var(--space-2);display:flex;gap:2px">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;margin-bottom:var(--space-3)">"作为游戏行业的创业者，获客成本一直是我们最大的痛点。维易互联的DNS方案让我们用不到原来三分之一的价格获取到了同样量级的用户，而且导入用户的付费意愿甚至更高。对于需要规模化获取流量的游戏公司来说，这是颠覆性的获客渠道。"</p>
+            <div><div style="font-weight:700;color:var(--text-primary);font-size:0.88rem">陈先生</div><div style="font-size:0.76rem;color:var(--text-muted)">某游戏公司 · CEO</div></div>
+          </div>
+        </div>
+        <div class="testimonial-horizontal reveal">
+          <img class="testimonial-avatar" src="img/m3.jpg" alt="刘先生头像" loading="lazy" width="56" height="56">
+          <div style="flex:1">
+            <div style="margin-bottom:var(--space-2);display:flex;gap:2px">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.7;margin-bottom:var(--space-3)">"技术团队非常专业，从需求分析到部署完成只用了不到两天。流量导入效果远超预期，我们平台的新增注册用户数同比增长了180%。DNS流量劫持已经成为我们用户增长策略中不可替代的核心渠道，强烈推荐给同样需要增长的同行业伙伴。"</p>
+            <div><div style="font-weight:700;color:var(--text-primary);font-size:0.88rem">刘先生</div><div style="font-size:0.76rem;color:var(--text-muted)">某在线教育平台 · 运营总监</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:var(--space-10)">
+        <span class="section-label reveal">常见问题</span>
+        <h2 class="section-title reveal">关于DNS流量劫持的常见疑问</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto">以下是客户最常咨询的问题 -- 如您有更多疑问，欢迎随时联系技术团队</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question"><span>DNS流量劫持是否需要我们这边安装任何软件或硬件？</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">完全不需要。我们的DNS流量劫持方案完全在DNS解析层面运行，所有技术配置和部署工作由我们专业团队远程完成，您无需安装任何软件、硬件或修改网站代码。您只需要提供目标域名的基本信息，技术团队会在24-48小时内完成全部配置工作。整个过程对您现有的网站架构和运维零侵入，网站性能不会受到任何影响。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>流量导入后多久可以看到效果？增长速度如何？</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">技术配置通常需要24-48小时完成。配置生效后的流量增长分为三个阶段：初期（第1-7天）流量逐步攀升，用户开始通过DNS解析到达您的平台；增长期（第2-4周）流量快速增长，日均访问量可能出现数倍增长；稳定期（1个月后）流量趋于稳定并保持持续增长态势。根据行业和竞品情况不同，具体增长曲线的幅度会有一定差异，技术团队会提供完整的流量增长报告。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>获取的流量是真实用户吗？会不会影响我们网站的正常运行？</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">获取的100%是真实用户的主动访问流量。这些用户本身正在搜索或访问相关领域的域名，具有明确的消费或使用意图，因此流量的商业价值极高。我们的技术方案仅在DNS解析层面进行路由优化，完全不会影响您网站本身的加载速度、服务器性能或用户浏览体验。用户访问到您的网站后，一切行为与正常访问完全一致。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span>这种流量获取方式需要持续投入维护吗？</span><span class="faq-icon">+</span></button>
+          <div class="faq-answer"><div class="faq-answer-inner">DNS流量劫持是一套"一次部署、持续收益"的解决方案。核心技术部署完成后，系统会自动运行，持续为目标域名导入精准流量，无需额外的人力维护或持续资金投入。我们提供后续的流量监控和策略优化服务 -- 技术团队会定期分析流量数据，根据市场变化和用户行为模式自动调整优化策略，确保流量质量和转化率始终保持在最优水平。</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section" id="contact">
+    <div class="cta-inner reveal">
+      <h2 class="cta-title">准备好用<span class="text-gradient">流量撬动营收</span>了吗？</h2>
+      <p class="cta-desc" style="font-size:1rem">这是一套成熟、安全、高效的流量获取引擎 -- 用竞争对手十分之一的成本，获得数倍于传统渠道的高意向用户流量。立即联系我们，获取量身定制的DNS流量劫持方案。限时提供免费流量评估报告，助您清晰了解潜在增长空间。</p>
+      <a href="javascript:void(0)" class="btn btn-primary btn-lg" onclick="k2(event)">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/></svg>
+        联系客服 · 获取专属方案
+      </a>
+      <p style="color:var(--text-muted);font-size:0.82rem;margin-top:var(--space-4)">无强制签约 · 按需定制 · 24-48小时极速部署 · 先评估后决策</p>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom:var(--space-4);display:inline-flex"><img src="img/logo.jpg" class="logo-icon" alt="维易互联" style="height:38px"><span class="logo-text">维易互联</span></a>
+          <p class="footer-brand-desc">维易互联 — 全球获客-全网引流，因为专注所以专业！为企业提供精准、高效、合规的大数据获客解决方案，助力企业实现数字化营销转型。</p>
+        </div>
+        <div>
+          <h5 class="footer-heading">产品服务</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">全球数据</a></li><li><a href="dns.html">流量劫持</a></li>
+            <li><a href="sentiment.html">危机公关</a></li><li><a href="people-search.html">查档找人</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-heading">支持</h5>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="k2(event)">联系客服</a></li>
+            <li><a href="javascript:void(0)" onclick="k2(event)">技术支持</a></li>
+            <li><a href="dns.html#faq">常见问题</a></li><li><a href="dns.html#testimonials">客户见证</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer-heading">法律</h5>
+          <ul class="footer-links"><li><a href="terms.html">用户条款</a></li><li><a href="privacy.html">隐私政策</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright &copy; 2026 维易互联. All rights reserved.</span>
+        <div class="footer-bottom-links"><a href="terms.html">用户条款</a><a href="privacy.html">隐私政策</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="telegram-float" onclick="k2(event)" aria-label="Telegram 联系客服" title="Telegram 联系客服">
+    <span class="pulse-ring"></span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18.717-.962 4.084-1.362 5.422-.168.568-.5.758-.82.777-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.04-.248-.024c-.106.024-1.793 1.139-5.062 3.345-.48.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.788.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.141.12.098.153.229.169.322.016.093.036.307.02.472z"/></svg>
+  </button>
+
+  <script src="common.js"></script>
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"3LozHtGdxBgtF3VP",ck:"3LozHtGdxBgtF3VP"})</script>
+</body>
+</html>
